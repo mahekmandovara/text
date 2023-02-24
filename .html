@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 500px;
+  height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<button type="button" class="collapsible">ROSE</button>
+<div class="content">
+  <div class="container">
+    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSTPUEdX7hgDtUIcopXEWuF2i6PCTok_VRI1PgKUCaK1eAZDCCvJuzC9f_RxGy3ZugpvNq9AeWlWgwKxgQ" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">The Greek legends narrate how the white rose first sprang during the birth of Aphrodite, the Goddess of Purity. The association of rose with love is also a concept passed on from myths that relate how the name of Eros, the God of Love, can be rearranged to form the word 'rose'.</div>
+    </div>
+  </div>
+  
+</div>
+<button type="button" class="collapsible">SUNFLOWER</button>
+<div class="content">
+  <div class="container">
+    <img src="https://m.media-amazon.com/images/I/61KTbjfuNIL._SX466_.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Sunflowers symbolise loyalty, adoration thanks to the myth of Clytie and Apollo. And, because of their association with the sun, sunflowers are well-known for being a happy flower and the perfect bloom for a summer flower delivery to brighten someone's mood!</div>
+    </div>
+  </div>
+  
+</div>
+<button type="button" class="collapsible">LOTUS</button>
+<div class="content">
+  <div class="container">
+    <img src="https://t3.ftcdn.net/jpg/04/57/71/24/360_F_457712487_pwWnnuFAeXJSSHip3IHJeQfF96HYLlM2.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">lotuses rise from the mud without stains, they are often viewed as a symbol of purity. Since they return to the murky water each evening and open their blooms at the break of day, lotus flowers are also symbols of strength, resilience, and rebirth</div>
+    </div>
+  </div>
+  
+
+  
+</div>
+<button type="button" class="collapsible">VIOLET</button>
+<div class="content">
+  <div class="container">
+    <img src="" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">One thing violets are known most for is the fact that they have a lovely scent that seems to go away after just one sniff. That's because the flowers contain a chemical called ionine which desensitizes the nose and sense of smell temporarily.</div>
+    </div>
+  </div>
+  
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

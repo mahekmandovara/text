@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <style>
+        .scroll {
+            height: 800px;
+            background-color: rgb(157, 113, 142);
+        }
+
+    </style>
+    </style>
+</head>
+<body>
+    <h1 style="color: black; text-align: center;">TASK 1</h1>
+    <h1 style="color: rgb(9, 10, 9); text-align: center; font-size: 40px;">
+        j-Query 
+    </h1>
+    <b style="font-size: 30px; color: rgb(126, 64, 116);">
+        Scroll to the top of the page
+        using JavaScript/jQuery?
+    </b>
+    <p style="font-size: 20px; color: rgb(5, 76, 176);">
+        Click on the button below to
+        scroll to the top of the page.
+    </p>
+    <p class="scroll" style="font-size: 40px; text-align: center; color: rgb(33, 27, 27);">
+        JavaScript/ jQuery <br>
+        The Coming of the King<br>
+        The Coming of the King is a delightful morality tale featured in Ms. Richards' collection of stories and poems, The Pig Brother and Other Fables and Stories (1881). Working together to make positive changes and act kindly to others doesn't require a king at all, but the warmth in our hearts can be as golden as a crown!
+    </p>
+    <button onclick="scrollToTop()">
+      TOP 
+    </button>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script>
+        function scrollToTop() {
+            $(window).scrollTop(0);
+        }
+    </script>
+    <br>
+    <hr>
+    <!--Disable Right Click Menu-->
+    <h1 style="color: black; text-align: center;">TASK 2</h1>
+        
+        <script src=
+                "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+       
+        
+        <script>
+            $(document).ready(function(){
+                    $(document).bind("contextmenu",function(e){
+                        alert('right click disabled');
+                        return false;
+                    });
+            });
+        </script>
+        <p style="font-size: 50px; color: black;">Disable Right Click Menu</p>
+    <br>
+    <hr>
+    <!--Blinking Text using jQuery-->
+    <h1 style="color: black; text-align: center;">TASK 3</h1>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    function blink_text() {
+        $('.blink').fadeOut(500);
+        $('.blink').fadeIn(500);
+    }
+    setInterval(blink_text, 1000);
+    </script>
+    <h1 class="blink">Blinking The Text</h1>
+    <br>
+    <hr>
+    <!--Zebra Stripes Table Effect.-->
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #ddd;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 16px;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #faa4c5;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <h1 style="color: black; text-align: center;">TASK 4</h1>
+        <h2 style="text-align: center; color: rgb(123, 65, 89);">Zebra Striped Table</h2>        
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>MAHEK</td>
+            <td>MANDOVARA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>ANJALI</td>
+            <td>PATEL</td>
+            <td>89</td>
+          </tr>
+          <tr>
+            <td>HIREN</td>
+            <td>BAGDA</td>
+            <td>82</td>
+          </tr>
+        </table>
+        </body>
+        <HR>
+            
+</body>
+</html>
